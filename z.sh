@@ -215,6 +215,9 @@ _z() {
         else
           return $?
         fi
+        echo "\e[48;5;238m\e[38;5;250mCURRENT PATH:\e[1m `pwd`"
+        (_z --add "${PWD:A}" &)
+        : $RANDOM
     fi
 }
 
